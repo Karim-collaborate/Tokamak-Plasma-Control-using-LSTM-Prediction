@@ -17,8 +17,8 @@ def generate_synthetic_data(samples=1000, timesteps=10):
 
         # Define disruption rule (IMPORTANT PART)
         risk = (
-            0.3 * np.mean(temperature) +
-            0.3 * np.mean(density) +
+            0.3 * np.average(temperature) +
+            0.3 * np.average(density) +
             0.00005 * np.mean(current)
         )
 
