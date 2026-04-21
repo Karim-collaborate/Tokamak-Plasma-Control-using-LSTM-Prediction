@@ -1,7 +1,6 @@
 import numpy as np
 
 def generate_synthetic_data(samples=1000, timesteps=10):
-    np.random.seed(42)
 
     X = []
     y = []
@@ -9,7 +8,7 @@ def generate_synthetic_data(samples=1000, timesteps=10):
     for _ in range(samples):
         # Generate time series
         temperature = np.random.normal(10, 2, timesteps)   # keV
-        density = np.random.normal(5, 1, timesteps)        # arbitrary units
+        density = np.random.normal(5, 1, timesteps)        
         current = np.random.normal(1e4, 2e3, timesteps)    # Amperes
         noise = np.random.normal(0, 0.5, timesteps)
 
@@ -26,7 +25,7 @@ def generate_synthetic_data(samples=1000, timesteps=10):
         # Add randomness
         risk += np.random.normal(0, 0.5)
 
-        # Convert to probability
+        # Convert to probability with sigmoid function
         prob = 1 / (1 + np.exp(-risk))
 
         # Label
