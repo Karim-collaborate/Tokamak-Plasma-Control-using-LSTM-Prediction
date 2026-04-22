@@ -1,10 +1,21 @@
 from tensorflow.keras.models import load_model
-from data import generate_synthetic_data 
+from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt 
-from LSTM_model import disruption_detection_model
 import os
 
+from LSTM_model import disruption_detection_model
+from data import generate_synthetic_data 
+
 X_train, y_train = generate_synthetic_data()
+
+#normalize data
+samples, timesteps, features = X_train.shape
+X_reshaped = X_train.reshape(-1, features)
+scaler = MinMaxScaler()
+X_scaled = scaler.fit_transform(X_reshaped)
+X_train = X_scaled.reshape(samples, timesteps, features)
+
+
 model_path = "lstm_model.keras"
     
 if os.path.exists(model_path):
