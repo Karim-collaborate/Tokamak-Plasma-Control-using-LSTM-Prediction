@@ -1,5 +1,5 @@
 from src.data import generate_synthetic_data 
-from LSTM_model import disruption_detection_model 
+from src.models.LSTM_model import disruption_detection_model 
 import matplotlib.pyplot as plt 
 
 
