@@ -1,11 +1,11 @@
 from tensorflow.keras.models import load_model
-from src.data import generate_synthetic_data 
+from data import generate_synthetic_data 
 import matplotlib.pyplot as plt 
-from src.models.LSTM_model import disruption_detection_model
+from LSTM_model import disruption_detection_model
 import os
 
 X_train, y_train = generate_synthetic_data()
-model_path = "src/models/lstm_model.keras"
+model_path = "lstm_model.keras"
     
 if os.path.exists(model_path):
     model = load_model(model_path)
