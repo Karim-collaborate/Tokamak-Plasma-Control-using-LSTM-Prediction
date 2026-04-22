@@ -1,2 +1,9 @@
-*/lstm_model.keras
-*/__pycache__
+#model
+*.keras
+
+
+#python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
