@@ -12,7 +12,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 
 history = model.fit(X_train, y_train, epochs=10, batch_size=32)
 
-model.save("lstm_model.keras")
+model.save("src/models/lstm_model.keras")
 
 plt.plot(history.history['accuracy'])
 plt.title("Model accuracy")
