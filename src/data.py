@@ -19,7 +19,7 @@ def generate_synthetic_data(samples=1000, timesteps=10):
         risk = (
             0.3 * np.average(temperature) +
             0.3 * np.average(density) +
-            0.00005 * np.mean(current)
+            0.00005 * np.average(current)
         )
 
         # Add randomness
