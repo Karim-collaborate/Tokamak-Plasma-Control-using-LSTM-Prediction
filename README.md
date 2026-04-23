@@ -1,6 +1,6 @@
 # Tokamak Plasma Control using LSTM Prediction
 
-## Overview
+## 📌Overview
 
 This project simulates an intelligent control system for a tokamak fusion reactor. It uses a Long Short-Term Memory (LSTM) neural network to predict plasma instabilities and potential disruptions, and adjusts control parameters in real time to maintain stable confinement.
 
@@ -8,7 +8,7 @@ The goal is to explore how machine learning can assist in managing complex plasm
 
 ---
 
-## Problem Statement
+## 🎯Problem Statement
 
 Plasma in tokamak reactors is highly unstable and prone to disruptions, which can damage the reactor and reduce efficiency and lead to serious security problems.
 
@@ -20,7 +20,7 @@ This project addresses the problem by:
 
 ---
 
-## Features
+## 🚀Features
 
 * Time-series prediction of plasma behavior using LSTM
 * Detection of potential instabilities and disruptions
@@ -30,7 +30,7 @@ This project addresses the problem by:
 
 ---
 
-## Tech Stack
+## 🛠️Tech Stack
 
 * **Python**
 * **TensorFlow / Keras** (LSTM model)
@@ -41,7 +41,7 @@ This project addresses the problem by:
 
 ---
 
-## How It Works
+## ⚙️How It Works
 
 1. Plasma data (simulated) is fed into the LSTM model
 2. The model predicts future plasma states
@@ -52,7 +52,7 @@ This project addresses the problem by:
 
 ---
 
-## Project Structure
+## 📂Project Structure
 
 ```
 ├── src/
@@ -68,7 +68,7 @@ This project addresses the problem by:
 
 ---
 
-## Installation
+## ⚙️Installation
 
 ```bash
 git clone https://github.com/Karim-collaborate/tokamak-plasma-control.git
@@ -78,7 +78,7 @@ pip install tensorflow scipy scikit-learn numpy matplotlib simplepid
 
 ---
 
-## Usage
+## ▶️Usage
 
 ```bash
 python main.py
@@ -86,7 +86,7 @@ python main.py
 
 ---
 
-## Results
+## 📊Results
 
 The system demonstrates the ability to:
 
@@ -96,7 +96,7 @@ The system demonstrates the ability to:
 
 ---
 
-## Future Improvements
+## 💡Future Improvements
 
 * Integration with real experimental datasets (e.g., ITER, JET)
 * More advanced control strategies
@@ -105,12 +105,11 @@ The system demonstrates the ability to:
 
 ---
 
-## Disclaimer
+## ⚠️Disclaimer
 
 This project is a simplified simulation for educational purposes and does not represent a real industrial control system.
 
 ---
 
-## Author
-
-Oolahiane karim
+## 👤Author
+- Oolahiane karim
