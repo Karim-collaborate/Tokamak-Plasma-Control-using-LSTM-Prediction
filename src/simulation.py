@@ -1,6 +1,6 @@
-from models.data import generate_synthetic_data
-from physics import coil_field
-from control import current_control
+from src.models.data import generate_synthetic_data
+from src.physics import coil_field
+from src.control import current_control
 from sklearn.preprocessing import MinMaxScaler
 
 def plasma_control_loop(model, R_coil=1.0, Z0_coil=0.0, N_turns=100, initial_current=1e4):
