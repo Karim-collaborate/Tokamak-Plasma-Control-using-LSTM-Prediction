@@ -14,7 +14,4 @@ else:
     
     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-
-model.save(model_path)
-
 plasma_control_loop(model)
