@@ -71,8 +71,8 @@ This project addresses the problem by:
 ## ⚙️Installation
 
 ```bash
-git clone https://github.com/Karim-collaborate/tokamak-plasma-control.git
-cd tokamak-plasma-control
+git clone https://github.com/Karim-collaborate/Tokamak-Plasma-Control-using-LSTM-Prediction.git
+cd Tokamak-Plasma-Control-using-LSTM-Prediction
 pip install tensorflow scipy scikit-learn numpy matplotlib simplepid
 ```
 
